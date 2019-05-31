@@ -45,7 +45,7 @@
 
 <div align="center">
   <img src="https://github.com/KK980827/staticResources/raw/master/DD音乐/6.jpg"/>
-  <p align="center">4.后台管理-歌单管理/p>
+  <p align="center">4.后台管理-歌单管理</p>
 </div>
 
 # 技术
