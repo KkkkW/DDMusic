@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="spring-jdbc-5.0.8.RELEASE-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-5.0.8.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-5.0.8.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

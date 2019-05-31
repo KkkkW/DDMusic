@@ -1,0 +1,49 @@
+#copyRight{
+    user-select: none;
+    width: 100%;
+    height: 6rem;
+    border-top: white 2px solid;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+.content{
+    user-select: text;
+    width: 100%;
+    color: dodgerblue;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: .5rem 0;
+}
+.content p{
+    font-size: .8rem;
+}
+#btn{
+    cursor: pointer;
+    color: limegreen;
+}
+a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+@media screen and (max-width: 1024px){
+    #copyRight{
+        height: 5rem;
+        width: 100%;
+        overflow: hidden;
+        padding: .5rem;
+        box-sizing: border-box;
+        box-shadow: #ccc 0pc -1px 5px;
+    }
+    .content{
+        line-height: 1.2rem;
+    }
+    .content p{
+        font-size: .9rem;
+    }
+    .content p:nth-child(2){
+        display: none;
+    }
+    #version{
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="spring-aop-5.0.8.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-aspects-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-context-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-core-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-orm-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-5.0.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-5.0.8.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-5.0.8.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-aspects-5.0.8.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-5.0.8.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-context-5.0.8.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-core-5.0.8.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-5.0.8.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-orm-5.0.8.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-5.0.8.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-5.0.8.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-5.0.8.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="music_best_big_kk:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/music_best_big_kk_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="music_best_big_kk/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="music_best_big_kk" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mybatis-3.4.6" />
+          <element id="library" level="project" name="log4j-1.2.17" />
+          <element id="library" level="project" name="aspectjrt-1.6.4" />
+          <element id="library" level="project" name="standard" />
+          <element id="library" level="project" name="c3p0-0.9.5.2" />
+          <element id="library" level="project" name="junit-4.8.2" />
+          <element id="library" level="project" name="spring-aop-5.0.8.RELEASE" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.44-bin" />
+          <element id="library" level="project" name="spring-jdbc-5.0.8.RELEASE-sources" />
+          <element id="library" level="project" name="mchange-commons-java-0.2.11" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

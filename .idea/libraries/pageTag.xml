@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pageTag">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/pageTag.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

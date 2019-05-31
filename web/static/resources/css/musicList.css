@@ -1,0 +1,200 @@
+header{
+    width: 100%;
+    height: 6rem;
+    background: #ededed;
+    box-shadow: #ccc 0px 0px 5px;
+}
+header h1{
+    line-height: 6rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+    padding: 0 2rem;
+    user-select: none;
+    text-shadow: #cccccc 0px 0px 1px;
+    transition: all linear 200ms;
+    display: inline-block;
+}
+header h1:hover{
+    color: black;
+}
+#op{
+    float: right;
+    margin: 2rem 1rem;
+}
+header + div{
+    width: 100%;
+    min-height: 50rem;
+}
+aside, #content{
+    display: inline-block;
+}
+aside{
+    width: 15rem;
+    height: 100%;
+    padding:  0 .5rem;
+    vertical-align: top;
+}
+#logo{
+    width: 60%;
+    display: block;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: #ccc 0px 0px 5px;
+    border: #5f9df5 3px solid;
+    margin: 2rem auto;
+}
+#menus{
+    list-style: none;
+    text-align: center;
+    color: #616161;
+}
+#menus li{
+    user-select: none;
+    border-bottom: whitesmoke 1px solid;
+    padding: .7rem .2rem;
+    transition: all linear 200ms;
+}
+.select{
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #d2d2d2;
+}
+#menus li:hover{
+    color: #171717;
+    background: whitesmoke;
+}
+#content{
+    width: 80rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+@keyframes a1 {
+    from{
+        bottom: 10rem;
+    }
+    to{
+        bottom: 15rem;
+    }
+}
+#uploadForm{
+    overflow: auto;
+}
+#uploadBtn{
+    position: fixed;
+    bottom: 10rem;
+    right: 10rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 5rem;
+    font-weight: lighter;
+    line-height: 4rem;
+    box-shadow: #ccc 0px 0px 5px;
+    transition: all ease 300ms;
+    animation: a1 3s linear infinite alternate;
+}
+#uploadBtn:hover{
+    transform: rotate(-90deg);
+    background: dodgerblue;
+    border: dodgerblue 1px solid;
+}
+@keyframes borderToggle {
+    from{
+        border-bottom: dodgerblue 5px double;
+    }
+    50%{
+        border-bottom: chocolate 5px double;
+    }
+    to{
+        border-bottom: lawngreen 5px double;
+    }
+}
+#miniPlayer{
+    display: inline-block;
+    padding: .2rem .5rem;
+    font-size: 1rem;
+    animation: borderToggle 1500ms linear infinite alternate;
+    position: fixed;
+    right: 50%;
+    transform: translate(50%, 0);
+    top: 3rem;
+}
+#miniPlayer #name{
+    display: inline-block;
+    max-width: 8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+#empty{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+    text-align: center;
+    color: darkgray;
+    user-select: none;
+    transition: all linear 200ms;
+}
+#empty:hover{
+    color: lightskyblue;
+}
+#empty i{
+    font-size: 8rem;
+}
+#empty p{
+    font-size: 1rem;
+    letter-spacing: .5rem;
+}
+.preview_cover{
+    width: 300px;
+    height: auto;
+}
+.preview_cover img{
+    width: 100%;
+    height: auto;
+    border: dodgerblue 1px solid;
+    border-radius: 3px;
+}
+.thumbImg{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+#pagination{
+    text-align: center;
+    padding: 1rem 0;
+}
+.el-steps{
+    margin: 0 0 1rem 0;
+}
+.uploader{
+    text-align: center;
+    padding: 1rem;
+}
+.formCover{
+    width: 60%;
+    text-align: center;
+}
+#u_info{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.el-upload__tip span{
+    color: red;
+    font-weight: bold;
+}
+#updateForm .dialog-footer{
+    display: block;
+    text-align: center;
+}
+#updateForm .el-image{
+    border-radius: 5px;
+    box-shadow: #ccc 0px 0px 5px;
+    padding: .5rem;
+}

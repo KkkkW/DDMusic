@@ -1,0 +1,109 @@
+header{
+    width: 100%;
+    height: 6rem;
+    background: #ededed;
+    box-shadow: #ccc 0px 0px 5px;
+}
+header h1{
+    line-height: 6rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+    padding: 0 2rem;
+    user-select: none;
+    text-shadow: #cccccc 0px 0px 1px;
+    transition: all linear 200ms;
+    display: inline-block;
+}
+header h1:hover{
+    color: black;
+}
+#op{
+    float: right;
+    margin: 2rem 1rem;
+}
+header + div{
+    width: 100%;
+    min-height: 50rem;
+}
+aside, #content{
+    display: inline-block;
+}
+aside{
+    width: 15rem;
+    height: 100%;
+    padding:  0 .5rem;
+    vertical-align: top;
+}
+#logo{
+    width: 60%;
+    display: block;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: #ccc 0px 0px 5px;
+    border: #5f9df5 3px solid;
+    margin: 2rem auto;
+}
+#menus{
+    list-style: none;
+    text-align: center;
+    color: #616161;
+}
+#menus li{
+    user-select: none;
+    border-bottom: whitesmoke 1px solid;
+    padding: .7rem .2rem;
+    transition: all linear 200ms;
+}
+.select{
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #d2d2d2;
+}
+#menus li:hover{
+    color: #171717;
+    background: whitesmoke;
+}
+#app{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: linear-gradient(dodgerblue, white);
+}
+#copyRight{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+#form{
+    width: 30rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    user-select: none;
+    overflow: hidden;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+.el-form{
+    padding: 3rem;
+}
+.btn_login{
+    display: block;
+    margin: 0 auto;
+}
+#imageVerify{
+    width: 100%;
+    text-align: center;
+}
+img{
+    display: block;
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+#imageVerify .el-button{
+    margin: 1rem auto;
+}

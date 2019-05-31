@@ -1,0 +1,52 @@
+html {
+    font-family: "Microsoft YaHei UI", "微软雅黑";
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    max-height: 999999px;
+}
+*::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+    background: lightgrey;
+    border-radius: 4px;
+}
+*::-webkit-scrollbar-thumb{
+    background: dodgerblue;
+    border-radius: 4px;
+}
+*::-webkit-scrollbar-corner{
+    background: deeppink;
+}
+@media screen and (max-width: 1024px){
+    *::-webkit-scrollbar{
+        width: 1px;
+        height: 1px;
+        background: lightgrey;
+        border-radius: 0;
+    }
+    *::-webkit-scrollbar-thumb{
+        background: dodgerblue;
+        border-radius: 0;
+    }
+}
+*::selection{
+    background: rgba(36, 143, 173, 0.6);
+    color: whitesmoke;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+#app{
+    width: 100%;
+    height: 100%;
+}

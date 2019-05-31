@@ -1,0 +1,147 @@
+#title{
+    width: 100%;
+    height: 6rem;
+    user-select: none;
+    line-height: 6rem;
+    box-sizing: border-box;
+    box-shadow: #ccc 0px 1px 5px;
+    padding: 0 1rem;
+    position: relative;
+    vertical-align: top;
+}
+#title h1{
+    display: inline-block;
+    font-style: italic;
+    height: 100%;
+    color: #248fad;
+    font-size: 2rem;
+    vertical-align: top;
+    padding: 0 5rem;
+    box-sizing: border-box;
+}
+#title h1 #logo{
+    width: 6rem;
+    vertical-align: top;
+    height: 6rem;
+    background: url("/resource/app-images/logo.png");
+    background-size: cover;
+    display: inline-block;
+}
+#title .el-link{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px){
+    #title{
+        height: 3rem;
+        padding: .2rem .5rem;
+        line-height: 3rem;
+        box-sizing: border-box;
+    }
+    #title h1{
+        height: 2.6rem;
+        display: inline-block;
+        font-style: italic;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        color: #248fad;
+        padding: 0;
+    }
+    #title h1 #logo{
+        width: 2.6rem;
+        height: 2.6rem;
+        background: url("/resource/app-images/logo.png");
+        background-size: cover;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #title .el-link{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-5%, -50%);
+    }
+}
+
+#content{
+    width: 50%;
+    height: auto;
+    margin: 2rem auto ;
+    min-height: 20rem;
+    border-radius: 5px;
+    border: lightgray 1px solid;
+    background: ghostwhite;
+    box-shadow: #ccc 0px 0px 5px;
+    padding: .5rem;
+    font-size: .5rem;
+}
+#content h1{
+    padding: 0 .5rem;
+    border-left: #248fad 5px solid;
+    color: #248fad;
+    font-size: 2rem;
+}
+#content p{
+    color: #248fad;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+    transition: all linear 300ms;
+    padding: 0 1rem .5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#content p:hover{
+    background: #e7e7ee;
+}
+#content span{
+    display: block;
+    text-align: right;
+    color: #248fad;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding: 0 .5rem .5rem;
+}
+
+@media screen and (max-width: 1024px){
+    #content{
+        width: 98%;
+        margin: .5rem auto;
+        min-height: 30rem;
+        box-shadow: none;
+        border-radius: 0;
+        border: none;
+        padding: .5rem 1rem;
+        box-sizing: border-box;
+    }
+    #content h1{
+        margin: 0 .5rem;
+        padding: 0 .5rem;
+        border-left: #248fad 3px solid;
+        font-size: 2rem;
+        color: #248fad;
+    }
+    #content p{
+        color: #333;
+        text-indent: 2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        transition: all linear 0ms;
+        padding: 0 0 .5rem;
+        border-radius: 5px;
+    }
+    #content p:hover{
+        background: ghostwhite;
+    }
+    #content span{
+        display: block;
+        text-align: right;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        padding: 0 .5rem;
+        margin: 0;
+        border-right: #248fad 2px solid;
+    }
+}

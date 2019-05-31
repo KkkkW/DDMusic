@@ -1,0 +1,749 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.iconLarge{
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.el-link{
+    vertical-align: middle;
+}
+@media screen and (max-width: 1024px){
+    body{
+        min-width: 100%;
+        min-height: 800px;
+    }
+}
+#bg, #shade, #bg img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+#bg{
+    z-index: -100 ;
+}
+#bg img{
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+}
+#shade{
+    z-index: -90;
+    background: rgba(56, 67, 106, 0.68);
+}
+
+header{
+    height: 3rem;
+    width: 100%;
+    user-select: none;
+}
+header>div{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5rem;
+    box-sizing: border-box;
+}
+header>div img{
+    height: 100%;
+    width: auto;
+}
+header>div span{
+    font-weight: bold;
+    line-height: 3rem;
+    font-style: italic;
+    vertical-align: top;
+    font-size: 1.7rem;
+    color: whitesmoke;
+}
+header ul{
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    float: right;
+    padding: 0 1rem 0 0 ;
+}
+header #menusBtn{
+    float: right;
+    margin: .6rem;
+}
+#mobileMenu{
+    text-align: center;
+}
+#mobileMenu .el-button, #mobileMenu .el-link{
+    cursor: pointer;
+    margin: 0 0 .5rem;
+    outline: none;
+}
+header ul li{
+    line-height: 3rem;
+    padding: 0 .5rem;
+    display: inline-block;
+    opacity: 0.7;
+    transition: all linear 300ms;
+}
+header ul li:hover{
+    opacity: 1;
+}
+.el-tabs{
+    color: white;
+}
+
+@media screen and (max-width: 1024px){
+    header{
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+    }
+    header>div{
+        padding-left: .5rem;
+    }
+    header>div span{
+        font-weight: bold;
+        line-height: 3rem;
+        font-style: italic;
+        vertical-align: top;
+        font-size: 1rem;
+        color: whitesmoke;
+    }
+}
+
+
+#mainTabs{
+    height: 52rem;
+    margin-bottom: 8rem;
+}
+@media screen and (max-width: 1024px){
+    #mainTabs{
+        min-height: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 7rem;
+    }
+}
+
+/*播放器*/
+#player{
+    width: 63rem;
+    height: 6rem;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    line-height: 6rem;
+    opacity: 0.8;
+    background: rgba(245,245,245,0.7);
+    border-radius: 5%/50%;
+    user-select: none;
+    transition: all linear 300ms;
+    cursor: pointer;
+}
+#hiddenControl{
+    background: whitesmoke;
+    padding: .5rem;
+    position: fixed;
+    border-radius: 5px;
+    bottom: 8%;
+    right: 2%;
+    z-index: 1000;
+}
+@media screen and (min-width: 1025px){
+    #player:hover{
+        background: whitesmoke;
+    }
+}
+#control, #process{
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+#control{
+    width: 13rem;
+    text-align: center;
+}
+.mobileControl{
+    display: inline-block;
+}
+#process{
+    width: 28rem;
+    margin: 0 1rem;
+    position: relative;
+}
+#process p{
+    position: absolute;
+    top: 0;
+    line-height: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+#process p:nth-child(1){
+    left: 0;
+    width: 70%;
+}
+#process p:nth-child(2) {
+    right: 0;
+    width: 30%;
+    text-align: right;
+}
+#process .el-slider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#operate{
+    display: inline-block;
+    width: 18rem;
+    text-align: center;
+}
+.playModel{
+    text-align: center;
+}
+.playModel .el-button{
+    margin: .2rem;
+}
+@media screen and (max-width: 1024px){
+    #player{
+        width: 100%;
+        height: 6rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        line-height: 4rem;
+        opacity: 0.90;
+        transform: translate(0, 0);
+        background: #e2e2e2;
+        border-radius: 10px 10px 0 0;
+        border-top: #3e8b57 3px solid;
+        user-select: none;
+        transition: all linear 300ms;
+        cursor: pointer;
+        padding-top: .3rem;
+    }
+    #control{
+        width: 98%;
+        height: 3rem;
+        line-height: 3rem;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    #control .el-button{
+        height: 100%;
+        margin: 0;
+    }
+    #process{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        display: block;
+        height: 3rem;
+    }
+    #process p:nth-child(1){
+        left: 1rem;
+        width: 70%;
+    }
+    #process p:nth-child(2) {
+        right: 1rem;
+        width: 30%;
+        text-align: right;
+    }
+    #process .el-slider{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+    }
+}
+
+
+#albumContent{
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    overflow: auto;
+    padding-bottom: 2rem;
+}
+.empty{
+    width: 20rem;
+    user-select: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.empty i{
+    font-size: 5rem;
+}
+.empty p{
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: .2rem;
+}
+#albumTips{
+    margin: .2rem 1rem;
+    color: white;
+    border: white 1px solid;
+    background: lightskyblue;
+}
+#albumList{
+    list-style: none;
+    overflow: auto;
+    width: 100%;
+    max-height: 45rem;
+}
+#albumList li{
+    display: inline-block;
+    background: rgba(245, 245, 245, 0.7);
+    width: 15rem;
+    height: 16rem;
+    margin: .5rem 0 1.5rem 1rem;
+    position: relative;
+    border: dodgerblue 1px solid;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: dodgerblue 0px 1px 5px;
+    cursor: pointer;
+    transition: all linear 300ms;
+}
+#albumList>li:hover{
+    border: dodgerblue 1px solid;
+    box-shadow: deepskyblue 0px 1px 15px;
+}
+.albumCover{
+    display: block;
+    width: 100%;
+    height: 13rem;
+    overflow: hidden;
+}
+.albumCover img{
+    width: 100%;
+    height: auto;
+}
+.albumName, .albumIntroduce, .albumCreateTime, .albumMusicCount{
+    color: dodgerblue;
+    display: inline-block;
+    text-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    padding: .1rem .2rem;
+}
+.albumName{
+    width: 85%;
+}
+.albumIntroduce{
+    width: 7%;
+}
+.albumCreateTime{
+    padding: 0 0 .5rem .2rem;
+    color: white;
+    font-weight: normal;
+}
+.albumMusicCount{
+    float: right;
+    padding: 0 .5rem .5rem 0;
+}
+#albumContent .el-pagination{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+@media screen and (max-width: 1024px){
+    #albumContent{
+        width: 100%;
+        min-height: 30rem;
+        height: 100%;
+        position: relative;
+        overflow: auto;
+    }
+    .empty{
+        width: 50%;
+        height: 10rem;
+        user-select: none;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .empty i{
+        font-size: 5rem;
+    }
+    .empty p{
+        font-size: 1rem;
+        font-style: italic;
+        letter-spacing: .2rem;
+    }
+    #albumTips{
+        margin: 0 .5rem;
+        background: rgba(0,0,0,0);
+        border: none;
+        font-size: 1rem;
+        border-left: dodgerblue 5px solid;
+        padding-left: .5rem;
+    }
+    #albumList{
+        list-style: none;
+        width: 100%;
+        max-height: 9999px;
+    }
+    #albumList li{
+        display: block;
+        background: rgba(245, 245, 245, 0.45);
+        width: 97%;
+        margin: .5rem auto;
+        height: 10rem;
+        position: relative;
+        overflow: hidden;
+        border: whitesmoke 1px solid;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: none;
+        vertical-align: top;
+        line-height: 10rem;
+        padding: .2rem;
+        box-sizing: border-box;
+    }
+    #albumList>li:hover{
+        border: whitesmoke 1px solid;
+        box-shadow: none;
+    }
+    .albumCover{
+        width: 30%;
+        height: 10rem;
+        display: inline-block;
+        border-radius: 0px;
+        vertical-align: top;
+        align-content: center;
+        position: relative;
+    }
+    .albumCover img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        width: auto;
+        height: 100%;
+    }
+    .albumInfo{
+        vertical-align: top;
+        line-height: 1rem;
+        width: 68%;
+        height: 100%;
+        display: inline-block;
+        padding-top: .2rem;
+        box-sizing: border-box;
+    }
+    .albumName, .albumIntroduce, .albumCreateTime, .albumMusicCount{
+        vertical-align: top;
+        color: #ffffff;
+        display: block;
+        text-wrap: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: bold;
+        padding: .1rem .2rem;
+    }
+    .albumName{
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        font-weight: normal;
+        text-wrap: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: .3rem;
+    }
+    .albumIntroduce{
+        width: 100%;
+        height: 6rem;
+        text-indent: 2rem;
+        font-size: .9rem;
+        font-weight: normal;
+        background: rgba(186, 186, 186, 0.51);
+        box-sizing: border-box;
+        border: whitesmoke 1px solid;
+        border-radius: 3px;
+        padding: .2rem;
+        overflow: auto;
+    }
+    .albumCreateTime{
+        display: inline-block;
+        float: right;
+        padding: .5rem 0 .4rem;
+        color: white;
+        font-weight: normal;
+    }
+    .albumMusicCount{
+        float: right;
+        padding: .5rem .5rem .2rem 0;
+    }
+    #albumContent .el-pagination{
+        position: absolute;
+        bottom: 0rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+#musicContent{
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    text-align: center;
+}
+#musicList{
+    width: 70%;
+    height: 95%;
+    overflow: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+.musicListBtn .el-button{
+    opacity: 0.7;
+    transition: all linear 300ms;
+}
+.musicListBtn .el-button:hover{
+    opacity: 1;
+}
+#lrcContent{
+    display: inline-block;
+    width: 28%;
+    height: 95%;
+    text-align: center;
+    overflow: hidden;
+    border-right: whitesmoke 1px solid;
+}
+#lrcContent #op{
+    padding: .2rem .5rem;
+    text-align: left;
+    margin: .5rem 1rem;
+    border-radius: 5%/50%;
+    border: dodgerblue 1px solid;
+    box-shadow: dodgerblue 0px 0px 10px;
+    overflow-x: hidden;
+}
+#op .el-tag{
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+#lrcContent #cover{
+    width: 80%;
+    height: 13rem;
+    overflow: hidden;
+    margin: .5rem auto;
+    text-align: center;
+    vertical-align: top;
+}
+#cover img{
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    border-radius: 5px;
+}
+#lrcContent #lrc{
+    width: 90%;
+    height: 28rem;
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+#lrcs{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#lrcs li{
+    letter-spacing: 0;
+    transition: all linear 300ms;
+    font-family: 楷体;
+}
+#lrcs .currentLRC{
+    letter-spacing: .3rem;
+    border-left: dodgerblue 5px double;
+    border-right: dodgerblue 5px double;
+    color: black;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    background: rgba(135, 206, 250, 0.68);
+}
+#lrcContent #lrc li{
+    height: 25px;
+}
+#lrc p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:white;
+    letter-spacing: .2rem;
+}
+
+@media screen and (max-width: 1024px){
+    #musicContent{
+        width: 100%;
+        min-height: 20rem;
+        height: auto;
+        position: relative;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    #musicList{
+        width: 100%;
+        height: auto;
+        display: block;
+        vertical-align: top;
+        overflow-x: hidden;
+    }
+    .musicListBtn .el-button{
+        opacity: 1;
+        transition:none;
+    }
+    .musicListBtn .el-button:hover{
+        opacity: 1;
+    }
+    #lrcContent{
+        display: none;
+    }
+}
+
+
+#mainLrcContent{
+    width: 65%;
+    height: 47rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    font-size: 1.6rem;
+    overflow: hidden;
+    font-family: 楷体, 'DejaVu Serif', Georgia, "Times New Roman", Times, serif;
+}
+#mainLrcContent p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    letter-spacing: .2rem;
+    font-size: 1.7rem;
+    color: whitesmoke;
+    border-bottom: lightseagreen 0 double;
+    user-select: none;
+    transition: all linear 300ms;
+    padding: .5rem 1rem;
+}
+#mainLrcContent p:hover{
+    color: lightseagreen;
+    border-bottom: lightseagreen 10px double;
+    font-weight: bold;
+    letter-spacing: .3rem;
+}
+#mainLrcs{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+}
+#mainLrcContent li{
+    list-style: none;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: .25rem 1rem ;
+    transition: all linear 300ms;
+}
+.mainCurrentLRC{
+    letter-spacing: .3rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: lightcoral;
+    text-shadow: white 0px 0px 5px 2px;
+}
+
+@media screen and (max-width: 1024px){
+    #mainLrcContent{
+        width: 97%;
+        min-height: 35rem;
+        height: auto;
+    }
+    #mainLrcContent p{
+        font-size: 1rem;
+        border-bottom: none;
+        transition: none;
+    }
+    #mainLrcContent p:hover{
+        color: whitesmoke;
+        border-bottom: none;
+        font-weight: normal;
+        letter-spacing: .1rem;
+    }
+    #mainLrcs{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        position: absolute;
+    }
+    #mainLrcContent li{
+        font-size: 1rem;
+        list-style: none;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: .25rem 1rem ;
+        transition: all linear 300ms;
+    }
+    .mainCurrentLRC{
+        letter-spacing: .3rem;
+        font-weight: bold;
+        font-size: 4rem;
+        color: lawngreen;
+    }
+}
+
+#musicList  .el-table th,#musicList  .el-table tr{
+    background: rgba(0,0,0,0);
+    color: white;
+}
+#musicList .el-table .el-table__body-wrapper table tbody tr{
+    background: rgba(0,0,0,0);
+    color: whitesmoke;
+}
+#musicList .el-table .el-table__body-wrapper table tbody tr:hover{
+    color: dodgerblue;
+}
+#musicList .el-table{
+    background: rgba(0,0,0,0);
+    color: whitesmoke;
+}
+#musicList .el-table:hover{
+    color: black;
+}
+#musicList .el-table .el-table__header-wrapper table thead tr{
+    background: rgba(0,0,0,0);
+    color: whitesmoke;
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td{
+    background-color: rgba(0,0,0,0) !important;
+    color: whitesmoke !important;
+}

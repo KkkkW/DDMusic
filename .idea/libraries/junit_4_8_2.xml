@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="junit-4.8.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/junit-4.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ThumbnailTool.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
