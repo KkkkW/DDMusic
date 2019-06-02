@@ -69,7 +69,7 @@
 
 # 版权说明
 
-该项目签署了Apache License 授权许可，详情请参阅 LICENSE.md
+该项目签署了MIT License授权许可，详情请参阅 LICENSE.md
 
 
 

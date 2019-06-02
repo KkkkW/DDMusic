@@ -3,6 +3,8 @@ package com.bestbigkk.music.service.common;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.util.Random;
+
 /*
 * 短信发送服务
 * */
@@ -23,6 +25,6 @@ public class SmsService {
     * 方法返回发送验证码内容，当发送失败，将返回null
     * */
     public String sendSMS(String phone){
-       return "1314";
+       return new Random().nextInt(1111)+8888+"";
     }
 }
