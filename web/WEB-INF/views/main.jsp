@@ -593,10 +593,7 @@
                 }
                 this.playList  = list;
             }
-            getPlayList(){return this.playList;}
             setVolume(v){this.player.volume=v;}
-            getVolume(){return this.player.volume;}
-            setPlayModel(model){this.playModel = model<0 || model>3 ? 0 : model;}
             getPlayModel(){return this.playModel;}
             getStatus(){return this.status;}
             toString(){
@@ -610,7 +607,7 @@
                     //交互
                     showTips : true,
                     showControl : true,//显示下方控制面板
-                    activeTag : "playlist",  // album | playlist | lrc
+                    activeTag : "album",  // album | playlist | lrc
                     clientEnv : "pc",  // pc : width >1024px  mobile: width<=1024  在调整窗口大小时候，自动触发
                     showMobileMenu : false,
 
